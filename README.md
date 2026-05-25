@@ -35,7 +35,7 @@ It allows managing classes, students, and different types of assessments (scores
 ---
 
 # Project Structure
-
+```
 Student Management System/
 │
 ├── backend/
@@ -100,7 +100,7 @@ Student Management System/
 │
 ├── .gitignore   
 └── README.md
-
+```
 ---
 
 # Installation
