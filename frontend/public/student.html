@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="/src/css/student.css">
+    <script type="module" src="/dist/student.js" defer></script>
+</head>
+
+<body>
+<div class="main-container">
+
+    <div class="top-container">
+        <div class="class-name" id="class-name"></div>
+
+        <div class="button-container">
+            <button id="back-button">Back</button>
+            <button id="add-student">Add Student</button>
+            <button id="assessment">Switch View</button>
+            <button class="logout-button" id="logout-button">Log Out</button> <!--This feature is not yet implemented-->
+        </div>
+    </div>
+
+    <div class="bottom-container">
+
+        <div class="students-container" id="students-container">
+            <div class="assessment-title" id="assessment-title"></div>
+            <div id="student-row"></div>
+        </div>
+
+        <div class="grades-container">
+            <div class="excel max-row" id="max-row"></div>
+            <div class="excel-grid" id="excel-grid"></div>
+
+        </div>
+    </div>
+</div>
+
+<!-- MODAL -->
+<div id="addStudentModal" class="modal hidden">
+    <input id="studentName" placeholder="Student name" />
+    <button id="createStudentBtn">Create</button>
+    <button id="closeStudentModal">Cancel</button>
+</div>
+
+<div id="overlay" class="overlay hidden"></div>
+
+<div id="deleteStudentModal" class="modal hidden">
+    <p id="deleteStudentText"></p>
+    <button id="confirmDeleteStudent">Delete</button>
+    <button id="cancelDeleteStudent">Cancel</button>
+</div>
+
+</body>
+</html>

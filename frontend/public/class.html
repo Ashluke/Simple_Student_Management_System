@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="/src/css/class.css">
+    <script type="module" src="/dist/class.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="top-container">
+            <div class="header-container">
+                <h1>Class Management System</h1>
+            </div>
+            <div class="button-container">
+                <button class="logout-button" id="logout-button">Log Out</button> <!--This feature is not yet implemented-->
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="box-container" id="box-container">
+                <div class="add-box" data-action="add">
+                    <img src="/static/images/add-icon.png">
+                    <h2>ADD CLASS</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay hidden"></div>
+    <div id="addClassModal" class="modal hidden">
+        <h2>Add Class</h2>
+        <input id="className" type="text" placeholder="Class name" />
+        <div class="image-picker" id="imagePicker">
+            <img id="previewImg" style="display:none;" />
+            <span id="pickerText">Click to choose image</span>
+        </div>
+        <input type="file" id="imageInput" accept="image/*" hidden>
+        <button id="createBtn">Create</button>
+        <button id="closeBtn">Cancel</button>
+    </div>
+    
+    <div id="deleteModal" class="modal hidden">
+        <h3>Delete Class?</h3>
+        <p id="deleteText"></p>
+        <button id="confirmDelete">Delete</button>
+        <button id="cancelDelete">Cancel</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+
+# Node dependencies
+node_modules/
+
+# TypeScript build output
+dist/
+
+# Database file
+*.db
